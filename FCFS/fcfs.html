@@ -87,7 +87,7 @@
     ===================== MAIN =================== -->
     <div class="algo">
         
-        <h1 >FCFS: First Come First Serve - Simulation</h1>
+        <h1 ><b>FCFS: First Come First Serve - Simulation</b></h1>
         
         <div class="visualizer tm-timeline-item">
             <div class="tm-timeline-item-inner">
@@ -100,12 +100,20 @@
                         <div class="">
                             <div class="form-container-res" id="ifManualInput" style="display:block">
                                 <label class="col-form-label">Enter the request sequence:</label>
-                                <input id="Sequence" class="form-control" oninput="resetFcfsResult()"
-                                placeholder="Eg: 10, 25, 40  (Maximum input value = 199)" />
+                                <div class="input-container">
+  <input id="Sequence" placeholder=" " oninput="resetCLookResult()" />
+  <label for="Sequence">Eg: 10, 25, 40 (Max input = 199)</label>
+  <span class="icon">&#x1F4DD;</span>
+</div>
+
                                 <p></p>
                                 <label class="col-form-label">Enter the initial head position:</label>
-                                <input id="Head" class="form-control" oninput="resetFcfsResult()"
-                                placeholder="Eg: 20 (Maximum input value = 199)" />
+                               <div class="input-container">
+  <input id="Head" placeholder=" " class="form-control" oninput="resetFcfsResult()" />
+  <label for="Head">Eg: 20 (Maximum input value = 199)</label>
+  <span class="icon">&#x1F4DD;</span>
+</div>
+
                                 <p></p>
                                 <div class="center-run">
                                     <button class="btn btn-outline-primary btn-outline-light" onclick="fcfs_click()"
@@ -121,6 +129,7 @@
         </div>
         <div class="newc tm-bg-dark-light tm-timeline-description">
             <br>
+            <hr style="border: 1px solid #ccc; margin: 10px 0;" />
             <h3 class="tm-text-orange tm-font-400">
 
                 Output of the algorithm:
@@ -169,7 +178,7 @@
           <div class="col-lg">
             <h3>Disk Scheduling</h3>
             <p>
-              Disk scheduling is the process of determining the order in which the read/write operations to a computer's disk drive are carried out.
+             Made by: Kritika Rana | Nikita Joshi | Vani Gupta | Aastha Thakur
           </div>
           <div class="col-lg-2">
             <h3>Quick Links</h3>

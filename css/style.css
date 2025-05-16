@@ -6,13 +6,16 @@
 
 
 *{
-  color: white;
+  color:white;
   /* font-family: 'Open Sans', sans-serif; */
   font-weight: 400;
 }
 
 body{
-  background-image: url('../images/bgimg-final.png') !important;
+  background-color:midnightblue;
+/*background-image: url('../images/3418448.jpg') !important;*/
+  
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -181,7 +184,8 @@ footer i {
 }
 
 .con .cards .box {
-  background-image: url(../images/bg\ image\ \(5\).jpg);
+  background-color: black;
+  
   position: absolute;
   align-items: center;
    top: 20px;
@@ -189,7 +193,7 @@ footer i {
   right: 20px;
   bottom: 20px; 
   /* background: #2a2b2f; */
-  border: 2px solid rgb(18, 15, 68);;
+  border: 2px solid rgb(233, 79, 177);;
   border-radius: 15px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
@@ -197,7 +201,7 @@ footer i {
 
 .con .cards .box:hover {
   transform: translate3d(0px, -40px, 100px);
-  box-shadow: 0 1mm 4mm rgba(77, 69, 199, 0.5);;
+  box-shadow: 0 1mm 4mm rgba(71, 242, 131, 0.5);;
   /* filter: drop-shadow(0 -1mm 4mm rgba(77, 69, 199)); */
   transform: scale(1.12); 
   transition: 0.5s;
@@ -205,20 +209,24 @@ footer i {
 }
 
 .con .cards:hover {
+  
   transition: 0.5s;
   box-shadow: none;
+
 }
 
 .con .cards .box .content {
+  color: beige;
   padding: 20px;
   text-align: center;
   align-items: center;
 }
 
 .con .cards .box .content h2 {
-  font-size: 1.8em;
-  color: rgba(255, 255, 255, 0.712);
+  font-size: 2.5em;
+  color: rgba(59, 225, 227, 0.712);
   z-index: 4;
+  font-weight: 400;
   transition: 0.5s;
 }
 
@@ -226,8 +234,8 @@ footer i {
   padding: 20px;
   text-align: center;
   font-size: 16px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.644);
+  font-weight: 400;
+  color: rgba(241, 236, 233, 0.644);
   z-index: 1;
   transition: 0.5s;
 }
@@ -305,5 +313,100 @@ footer i {
 
 .simulate:hover{
   color: white;
+}
+.input-container {
+  position: relative;
+  width: 60%;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #6c757d;
+  border-radius: 50px;
+  background-color: #fdfdfd;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px #007bff;
+  background-color: #fff;
+  outline: none;
+}
+
+.input-container label {
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  color: #6c757d;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  background-color: transparent;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 15px;
+  font-size: 12px;
+  color: #007bff;
+  background-color: #fdfdfd;
+  padding: 0 6px;
+  border-radius: 10px;
+}
+
+.input-container .icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  font-size: 18px;
+  pointer-events: none;
+}
+.styled-select {
+  width: 200px;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: 2px solid #6c757d;
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  appearance: none; /* Remove default arrow */
+  background-image:
+    linear-gradient(45deg, transparent 50%, #007bff 50%),
+    linear-gradient(135deg, #007bff 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 25px) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.styled-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px #007bff;
+  background-color: white;
+  color: black;
+}
+
+/* Optional: to style options in some browsers (limited support) */
+.styled-select option {
+  background-color: white;
+  color: black;
+  padding: 8px;
 }
 

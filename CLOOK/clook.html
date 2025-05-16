@@ -23,10 +23,11 @@
       margin: 3%;
       height: 150vh;
     }
+    
   </style>
 
 
-  <title>C-LOOK</title>
+  <title><b>C-LOOK</b></title>
 
   <link rel="icon" href="images/favicon.ico" />
 
@@ -40,13 +41,12 @@
   ===================== HEADER =================== -->
 
     <header class="shadow-md">
-      <!-- Navbar -->
+      
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
 
-          <!-- Logo -->
-          <a class="navbar-brand mr-5" href="../index.html"><img src="../images/heading.png" href="../index.html" alt=""
-              width="400px"></a>
+          
+       
 
           <!-- menu -->
           <div class="menu">
@@ -89,7 +89,7 @@
 
     <div class="algo">
 
-      <h1>C-LOOK - Simulation</h1>
+      <h1><b>C-LOOK - Simulation</b></h1>
 
       <div class="visualizer tm-timeline-item">
         <div class="tm-timeline-item-inner">
@@ -100,13 +100,23 @@
 
               <div class="">
                 <div class="form-container-res" id="ifManualInput" style="display:block">
-                  <label class="col-form-label">Enter the request sequence:</label>
-                  <input id="Sequence" class="form-control" oninput="resetCLookResult()"
-                    placeholder="Eg: 10, 25, 40  (Maximum input value = 199)" />
+                  <label class="col-form-label"><b>Enter the request sequence:</b></label>
+                  <div class="input-container">
+  <input id="Sequence" placeholder=" " oninput="resetCLookResult()" />
+  <label for="Sequence">Eg: 10, 25, 40 (Max input = 199)</label>
+  <span class="icon">&#x1F4DD;</span>
+</div>
+
+
+
                   <p></p>
                   <label class="col-form-label">Enter the initial head position:</label>
-                  <input id="Head" class="form-control" oninput="resetCLookResult()"
-                    placeholder="Eg: 20 (Maximum input value = 199)" />
+                  <div class="input-container">
+  <input id="Head" placeholder=" " class="form-control" oninput="resetFcfsResult()" />
+  <label for="Head">Eg: 20 (Maximum input value = 199)</label>
+  <span class="icon">&#x1F4DD;</span>
+</div>
+
                   <p></p>
 
                   <lable>Direction: </lable>
@@ -135,7 +145,7 @@
       <div class="newc tm-bg-dark-light tm-timeline-description">
         <h3 class="tm-text-orange tm-font-400">
 
-          Output of the algorithm:
+         <b></b> 
 
         </h3>
 

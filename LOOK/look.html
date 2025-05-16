@@ -102,12 +102,20 @@
               <div class="">
                 <div class="form-container-res" id="ifManualInput" style="display:block">
                   <label class="col-form-label">Enter the request sequence:</label>
-                  <input id="Sequence" class="form-control" oninput="resetLookResult()"
-                    placeholder="Eg: 10, 25, 40  (Maximum input value = 199)" />
+                  <div class="input-container">
+  <input id="Sequence" placeholder=" " oninput="resetCLookResult()" />
+  <label for="Sequence">Eg: 10, 25, 40 (Max input = 199)</label>
+  <span class="icon">&#x1F4DD;</span>
+</div>
+
                   <p></p>
                   <label class="col-form-label">Enter the initial head position:</label>
-                  <input id="Head" class="form-control" oninput="resetLookResult()"
-                    placeholder="Eg: 20 (Maximum input value = 199)" />
+                 <div class="input-container">
+  <input id="Head" placeholder=" " class="form-control" oninput="resetFcfsResult()" />
+  <label for="Head">Eg: 20 (Maximum input value = 199)</label>
+  <span class="icon">&#x1F4DD;</span>
+</div>
+
                   <p></p>
 
                   <lable>Direction: </lable>
@@ -185,8 +193,7 @@
           <div class="col-lg">
             <h3>Disk Scheduling</h3>
             <p>
-              Disk scheduling is the process of determining the order in which the read/write operations to a computer's disk drive are carried out.
-          </div>
+             Made by:Kritika Rana | Nikita Joshi | Vani Gupta | Aastha Thakur</div>
           <div class="col-lg-2">
             <h3>Quick Links</h3>
             <div class="footer-links">
