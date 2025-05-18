@@ -39,7 +39,7 @@ a{
 }
 
 main{
-  height: 100vh;
+  height: 150vh;
 }
 
 .main-text p {
@@ -134,6 +134,7 @@ footer i {
 /* Footer */
 .footer{
   position: relative;
+  margin-top: 50px;
   bottom: 0;
   display: flex;
   background-color: rgba(27, 25, 63, 0.61);;
@@ -409,4 +410,9 @@ footer i {
   color: black;
   padding: 8px;
 }
+#chartContainer {
+  
+  margin-bottom: 30px;
+}
+
 
